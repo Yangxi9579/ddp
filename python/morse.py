@@ -12,10 +12,10 @@ https://en.wikipedia.org/wiki/Morse_code
 """
 
 
-def morse_translator(text):
-    # Morse code mapping
+def morse_translator(input_string):
+      # Morse code mapping
     morse_code_dict = {
-        "A": ".-",
+         "A": ".-",
         "B": "-...",
         "C": "-.-.",
         "D": "-..",
@@ -43,9 +43,8 @@ def morse_translator(text):
         "Z": "--..",
     }
 
-    # Your code goes here
 
-def morse_translator(input_string):
+    # Your code goes here
     translated_string = ''
     for char in input_string:
         if char.isalpha():
@@ -56,14 +55,6 @@ def morse_translator(input_string):
 
     return translated_string
 
-xxx = input("Please entertext:")
-morse_translator(xxx)
-
-# Test cases
-print(
-    morse_translator("HELLO WORLD")
-)  # Expected output: ".... . .-.. .-.. --- / .-- --- .-. .-.. -.."
-print(morse_translator("Python"))  # Expected output: ".--. -.-- - .... --- -."
-print(
-    morse_translator("Morse Code")
-)  # Expected output: "-- --- .-. ... . / -.-. --- -.. ."
+input_text = "Love"
+result = morse_translator(input_text)
+print(result)
