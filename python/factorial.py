@@ -23,17 +23,15 @@ Example Test Cases:
 def calculate_factorial(number):
     # Handle edge cases for 0 and negative inputs
     if number < 0:
-        return "Error message or specific value."
+        return "Factorial is not defined for negative numbers"
     elif number == 0:
         return 1
     else:
-        # Calculate factorial using a for loop
         factorial_result = 1
+        # Calculate factorial using a for loop
         for i in range(1, number + 1):
             factorial_result *= i
         return factorial_result
-
-
 
 
 # Test cases
